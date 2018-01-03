@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="HOPPIE"
+        android:textAllCaps="true"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="36sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="200dp"
+        android:layout_height="350dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rbClick"
+            android:text="Business"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rbClick"
+            android:text="Sport"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rbClick"
+            android:text="Art"
+            android:textColor="?attr/actionModeSplitBackground"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:text="Get Ready to Pick A Hobby!"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/showHobbies"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:onClick="showButton"
+        android:text="DONE"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textColorLink="@color/colorAccent"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/radioGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:onClick="insertButton"
+        android:text="Insert"
+        android:textColor="?attr/actionModeSplitBackground"
+        android:textSize="18sp"
+        android:layout_above="@+id/showHobbies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
